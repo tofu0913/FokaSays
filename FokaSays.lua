@@ -20,6 +20,13 @@ windower.register_event('chat message', function(message, player, mode, is_gm)
     elseif message:lower():match('follow foka':lower()) then
         windower.send_command('input /follow Foka')
         windower.send_command('input /ja '..windower.to_shift_jis("スペクトラルジグ")..' <me>')
+
+    elseif message:lower():match('follow frieren':lower()) then
+        windower.send_command('input /follow Frieren')
+        windower.send_command('input /ja '..windower.to_shift_jis("スペクトラルジグ")..' <me>')
+        
+    elseif message:lower():match('bibiki':lower()) then
+        windower.send_command('input //suw sg warp "Bibiki Bay"')
         
     end
 end)
